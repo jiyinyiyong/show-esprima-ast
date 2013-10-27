@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Show me AST</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <!--
+    <script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+    -->
+    <script type="text/javascript" src="http://requirejs.org/docs/release/2.1.9/minified/require.js"></script>
+    <script type="text/javascript">
+      require.config({
+        paths: {
+          esprima: "http://rawgithub.com/ariya/esprima/master/esprima",
+          compact: "http://jiyinyiyong.github.io/compact-json/compact"
+        },
+        map: {
+          // dev
+          "dev": {
+            esprima: "bower_components/esprima/esprima",
+            compact: "bower_components/compact-json/compact"
+          }
+        }
+      })
+      require(["src/main"])
+    </script>
+  </head>
+<body>
+  <textarea class="code target" placeholder="Compiled"></textarea>
+  <textarea class="code source" placeholder="Source">console.log("code here")
+  </textarea>
+  <div class="mode">Compact</div>
+</body>
+</html>

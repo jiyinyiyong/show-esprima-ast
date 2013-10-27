@@ -1,0 +1,27 @@
+{
+  "name": "show-esprima-ast",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jiyinyiyong/show-esprima-ast",
+  "authors": [
+    "jiyinyiyong <jiyinyiyong@gmail.com>"
+  ],
+  "description": "Just show me the ASt",
+  "main": "index.html",
+  "keywords": [
+    "AST",
+    "esprima"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "esprima": "~1.0.4",
+    "compact-json": "*",
+    "requirejs": "~2.1.9"
+  }
+}
