@@ -2,4 +2,6 @@
 Show Esprima AST in page
 ------
 
-Visit http://jiyinyiyong.github.io/show-esprima-ast
+My demo with `compact-json`: http://jiyinyiyong.github.io/show-esprima-ast
+
+Official demo: http://esprima.org/demo/parse.html

@@ -23,7 +23,7 @@ define (require, exports) ->
 
   get_data = ->
     try
-      esprima.parse source.value
+      esprima.parse source.value, loc: yes
     catch error
       error.toString()
 

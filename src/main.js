@@ -20,7 +20,9 @@
     get_data = function() {
       var error;
       try {
-        return esprima.parse(source.value);
+        return esprima.parse(source.value, {
+          loc: true
+        });
       } catch (_error) {
         error = _error;
         return error.toString();
